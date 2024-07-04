@@ -1,0 +1,51 @@
+let term=Math.floor((Math.random()*2))+1
+// let term=2
+let box=document.getElementsByClassName("box")
+let win=[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [1,5,9],
+    [3,5,7],
+    [2,5,8],
+    [3,6,9],
+    [1,4,7]
+
+
+
+]
+
+
+if(term==1){
+    alert("Your Chance!")
+}
+else{
+    alert("Computer's Chance!")  
+}
+
+const checkwinner=()=>{
+   
+    if((box[0].innerText==box[1].innerText)&&(box[0].innerText==box[2].innerText)){
+       alert(winner is ${box[0].innerText});
+       window.location.reload()
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .main-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
